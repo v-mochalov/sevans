@@ -1,0 +1,29 @@
+<footer class="footer">
+	<div class="container">
+      <div class="footer__wrapper">
+         <div class="footer__logo">
+            <a href="/"><img src="/img/logo.svg" alt="MPR"></a>
+         </div>
+         <ul class="footer__menu">            
+            {{ range .Site.Data.settings.footer_menu.nav_items }}
+                    <li class="header__item">
+                        <a href="{{ .path }}" class="header__link">{{ .label }}</a>
+                    </li>
+            {{ end }} 
+         </ul>
+         <div class="footer__social header__social">
+            {{ range .Site.Data.settings.socials.nav_items }}
+            <div class="footer__icon">
+               <a href="{{ .icon_url }}">
+                  {{ .icon | safeHTML }}
+               </a>
+            </div>
+            {{ end }}             
+         </div>
+      </div>
+      <div class="footer__downline">         
+         {{ .Site.Data.settings.socials.copyright }}
+      </div>
+   </div>
+</footer>
+

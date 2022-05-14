@@ -1,0 +1,50 @@
+// 1. Colors
+//Body color
+$colorBody: #ffffff;
+//Main text
+$colorMain: rgba(0, 0, 0, 0.7);
+;
+//h1,h2,h3,h4,h5,h6
+$colorH1: #000000;
+$colorH2: #000000;
+$colorH3: #000000;
+$colorH4: #000000;
+$colorH5: #000000;
+$colorH6: #000000;
+//colors
+$accent: #FF3480;
+//Slider colors
+$dotsCol: #000000;
+$dotsActiveCol: $accent;
+body {
+    background: $colorBody;
+    color: $colorMain;
+}
+
+h1 {
+    color: $colorH1;
+}
+
+h2 {
+    color: $colorH2;
+}
+
+h3 {
+    color: $colorH3;
+}
+
+h4 {
+    color: $colorH4;
+}
+
+h5 {
+    color: $colorH5;
+}
+
+h6 {
+    color: $colorH6;
+}
+
+a {
+    color: $colorMain;
+}

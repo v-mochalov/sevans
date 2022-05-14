@@ -1,0 +1,15 @@
+nav_items:
+  - label: About Us
+    path: "/#about"
+  - label: Meta Division
+    path: "/#team"
+  - label: Clients  
+    path: "/#partners"
+  - label: NEWSROOM
+    path: "/blog"
+  - label: SERVICES
+    path: "/blog"
+  - label: CONTACT
+    path: "/blog"
+header_cta_button_text: Contact Us
+header_cta_button_url: "/#contact"

@@ -1,0 +1,42 @@
+<header class="header">
+    <div class="container">
+        <div class="header__body">
+            <div class="header__logo">
+                <a href="/">
+                    <img src="/img/logo.svg" alt="MPR">
+                </a>
+            </div>
+
+            <div class="header__burger">
+                <span></span>
+            </div>
+
+            <nav class="header__menu">
+                <ul class="header__list">
+                    {{ range .Site.Data.settings.main_menu.nav_items }}
+                    <li class="header__item">
+                        <a href="{{ .path }}" class="header__link">{{ .label }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+                <div class="header__btn">
+                    <a href="{{ .Site.Data.settings.main_menu.header_cta_button_url }}"
+                       class="btn btn--header btn--145">{{ .Site.Data.settings.main_menu.header_cta_button_text }}</a>
+                </div>
+                <div class="footer__social header__social">
+                    {{ range .Site.Data.settings.socials.nav_items }}
+                    <div class="footer__icon">
+                       <a href="{{ .icon_url }}">
+                          {{ .icon | safeHTML }}
+                       </a>
+                    </div>
+                    {{ end }}
+                </div>
+                <div class="footer__downline header__downline">
+                    {{ .Site.Data.settings.socials.copyright }}
+                </div>
+            </nav>
+
+        </div>
+    </div>
+</header>
